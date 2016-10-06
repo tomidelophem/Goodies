@@ -1,0 +1,24 @@
+.phoneNumber_BE{}
+phoneNumber_BE::after{
+    content: "02 320 00 55";
+}
+
+.phoneNumber_NL{}
+phoneNumber_NL::after{
+    content: "085-3330055";
+}
+
+.phoneNumber_UK{}
+phoneNumber_UK::after{
+    content: "0330 777 2755";
+}
+
+.phoneNumber_DE{}
+phoneNumber_DE::after{
+    content: "03221 100 15 55";
+}
+
+.phoneNumber_FR{}
+phoneNumber_FR::after{
+    content: "01 70 06 99 55 ";
+}
