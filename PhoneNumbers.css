@@ -5,7 +5,7 @@ phoneNumber_BE::after{
 
 .phoneNumber_NL{}
 phoneNumber_NL::after{
-    content: "085-3330055";
+    content: "085-333 00 55";
 }
 
 .phoneNumber_UK{}
