@@ -1,0 +1,282 @@
+<t t-name="website.pagecheck">
+  <t t-call="website.layout">
+  <style>
+a:clicked {
+    color: green;
+}
+
+.button_OK {
+	background-color: lime;
+	width: 100px;
+}
+
+.button_Improve {
+	background-color: yellow;
+}
+
+.button_Fix {
+	background-color: red;
+}
+</style>
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="s_text_block">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center mt16 mb32">
+              <h2 class="o_default_snippet_text"> Translations and quality checks </h2>
+    		  <h3> Hit the links with CTRL and fill in the assessment</h3>
+              
+            </div>
+            <div class="col-md-12 mb16 mt16">
+            
+            <form id="Feedback">
+
+    <input type="hidden" id="Domain" name="Domain" placeholder="Your Name"/>
+    <input type="hidden" id="Language" name="Language" placeholder="Your Name"/>
+<div style="text-align: center;">Domain: <span id="DomainText"><t t-esc="request.website.domain"/></span><br/>
+Language: <span id="LanguageText"><t t-esc="request.context.get('lang')"/></span><br/><br/></div>
+<table width="100%">
+              <tr><td width="50%" style="text-align: right; padding-right: 10px">&amp;nbsp;<a target="_blank" href ="/">Home Page</a></td>
+				<td><button type="button" data-target="Home_Page" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="Home_Page" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="Home_Page" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="Home_Page" name="Home Page" value=""/></td>
+				</tr>
+              <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/blog/trends-inspiration-2" >Trends</a>
+              </td>
+				<td><button type="button" data-target="Trends" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="Trends" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="Trends" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="Trends" name="Trends" value=""/></td>
+				</tr>			  
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/page/over-ons">Over Ons</a>
+              </td>
+				<td><button type="button" data-target="Over_Ons" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="Over_Ons" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="Over_Ons" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="Over_Ons" name="Over Ons" value=""/></td>
+				</tr>			  
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/page/faq">FAQ</a>
+              </td>
+				<td><button type="button" data-target="FAQ" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="FAQ" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="FAQ" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="FAQ" name="FAQ" value=""/></td>
+				</tr>			  
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/page/contactus">CONTACT</a>
+              </td>
+				<td><button type="button" data-target="CONTACT" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="CONTACT" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="CONTACT" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="CONTACT" name="CONTACT" value=""/></td>
+				</tr>			  
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/page/privacy">PRIVACY</a>
+              </td>
+				<td><button type="button" data-target="PRIVACY" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="PRIVACY" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="PRIVACY" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="PRIVACY" name="PRIVACY" value=""/></td>
+				</tr>			 		  
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/shop/category/3" >Cat 1</a>
+              </td>
+				<td><button type="button" data-target="Cat_1" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="Cat_1" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="Cat_1" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="Cat_1" name="Cat 1" value=""/></td>
+				</tr>			  
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/shop/category/4" >Cat 2</a>
+              </td>
+				<td><button type="button" data-target="Cat_2" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="Cat_2" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="Cat_2" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="Cat_2" name="Cat 2" value=""/></td>
+				</tr>
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/shop/category/14" >Cat 3</a>
+              </td>
+				<td><button type="button" data-target="Cat_3" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="Cat_3" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="Cat_3" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="Cat_3" name="Cat 3" value=""/></td>
+				</tr>			  
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/shop/category/16">Cat 4</a>
+              </td>
+				<td><button type="button" data-target="Cat_4" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="Cat_4" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="Cat_4" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="Cat_4" name="Cat 4" value=""/></td>
+				</tr>			  
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/shop/category/15" >Cat 5</a>
+              </td>
+				<td><button type="button" data-target="Cat_5" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="Cat_5" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="Cat_5" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="Cat_5" name="Cat 5" value=""/></td>
+				</tr>			  
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/shop/category/17" >Cat 6</a>
+              </td>
+				<td><button type="button" data-target="Cat_6" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="Cat_6" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="Cat_6" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="Cat_6" name="Cat 6" value=""/></td>
+				</tr>			  
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/shop/category/18">Cat 7</a>
+              </td>
+				<td><button type="button" data-target="Cat_7" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="Cat_7" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="Cat_7" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="Cat_7" name="Cat 7" value=""/></td>
+				</tr>			  
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/shop/cart" >Cart</a>
+              </td>
+				<td><button type="button" data-target="Cart" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="Cart" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="Cart" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="Cart" name="Cart" value=""/></td>
+				</tr>			  
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/shop/cart" >Checkout</a>
+              </td>
+				<td><button type="button" data-target="Checkout" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="Checkout" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="Checkout" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="Checkout" name="Checkout" value=""/></td>
+				</tr>			  
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/shop/payment" >Payment</a>
+              </td>
+				<td><button type="button" data-target="Payment" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="Payment" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="Payment" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="Payment" name="Payment" value=""/></td>
+				</tr>			  
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/shop/confirmation" >Confirmation</a>
+              </td>
+				<td><button type="button" data-target="Confirmation" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="Confirmation" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="Confirmation" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="Confirmation" name="Confirmation" value=""/></td>
+				</tr>			  
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/shop/product/salus-it500-e-thermostaat-5">Product 1</a>
+              </td>
+				<td><button type="button" data-target="Product_1" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="Product_1" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="Product_1" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="Product_1" name="Product 1" value=""/></td>
+				</tr>			  
+			  <tr><td width="50%" style="text-align: right; padding-right: 10px">
+                <a target="_blank" href ="/blog/trends-inspiration-2/post/2" >Blog 1</a>
+              </td>
+				<td><button type="button" data-target="Blog_1" data-value="OK" class="button_OK">OK!</button>
+				<button type="button" data-target="Blog_1" data-value="Improve: " class="button_Improve">Improve</button>
+				<button type="button" data-target="Blog_1" data-value="Fix: " class="button_Fix">Fix ASAP</button>
+				<input type="text" id="Blog_1" name="Blog 1" value=""/></td>
+				</tr>
+              
+              </table>
+              <div style="text-align: center">
+			  <br/>
+              <input type="text" name="Tester" placeholder="Your Name"/>
+			  <br/>
+                  <input type="submit" value="Send Feedback" /></div>
+</form>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+  <script>
+      
+      // Variable to hold request
+	  $('a').click(function(){
+      $(this).addClass("clicked");
+});
+
+$('button').click(function(){
+      //$("#" + $(this).attr('data-target')).value = $(this).attr('data-value');
+	  //$("#" + $(this).attr('data-target')).setAttribute('value',$(this).attr('data-value'));
+	  //alert($(this).attr('data-target'));
+	  //alert($(this).attr('data-value'));
+	  document.getElementById($(this).attr('data-target')).value = $(this).attr('data-value');
+	  
+});
+
+var request;
+
+// Bind to the submit event of our form
+$("#Feedback").submit(function(event){
+
+    
+    document.getElementById("Domain").value = document.getElementById("DomainText").innerHTML ;
+    document.getElementById("Language").value = document.getElementById("LanguageText").innerHTML ;
+    
+    // Prevent default posting of form - put here to work in case of errors
+    event.preventDefault();
+
+    // Abort any pending request
+    if (request) {
+        request.abort();
+    }
+    // setup some local variables
+    var $form = $(this);
+
+    // Let's select and cache all the fields
+    var $inputs = $form.find("input, select, button, textarea");
+
+    // Serialize the data in the form
+    var serializedData = $form.serialize();
+
+    // Let's disable the inputs for the duration of the Ajax request.
+    // Note: we disable elements AFTER the form data has been serialized.
+    // Disabled form elements will not be serialized.
+    $inputs.prop("disabled", true);
+
+    // Fire off the request to /form.php
+    request = $.ajax({
+            url: "https://script.google.com/macros/s/AKfycbyp8RuN2DFx1P9XNTIelG5akDO669ZjvH17lZ26aNY-IXGlZ2UA/exec",
+            type: "post",
+            data: serializedData
+        });
+
+    // Callback handler that will be called on success
+    request.done(function (response, textStatus, jqXHR){
+        // Log a message to the console
+        console.log("Hooray, it worked!");
+    });
+
+    // Callback handler that will be called on failure
+    request.fail(function (jqXHR, textStatus, errorThrown){
+        // Log the error to the console
+        console.error(
+            "The following error occurred: "+
+            textStatus, errorThrown
+        );
+    });
+
+    // Callback handler that will be called regardless
+    // if the request failed or succeeded
+    request.always(function () {
+        // Reenable the inputs
+        $inputs.prop("disabled", false);
+    });
+
+});
+      
+  </script>
+</t>
